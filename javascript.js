@@ -14,4 +14,8 @@ function doAddition() {
     console.log(
         parseInt(document.getElementById("var1").value) + parseInt(document.getElementById("var2").value)
     );
+}  
+
+function changeHeader() {
+    document.getElementById("changeMe").innerHTML = "This is changed";
 }
