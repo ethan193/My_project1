@@ -4,4 +4,50 @@
         My Project 1
     </title>
 
+    <h1>my project 1</h1>
+    <p>This is a test project for me to work on.</p>
+
+    <h2>This is an input</h2>
+    <input type="text">
+
+    <h2>This is an input that actually does something</h2>
+    <input id="inputChange" type="text">
+    <button onclick="consoleLogChange()">My Button</button>
+
+    <h2>This input does math</h2>
+    <input id="var1" type="number">
+    <input id="var2" type="number">
+    <button onclick="doAddition()">submit</button>
+
+    
+
+
+
+
+
+
+
+    <script>
+
+
+        function consoleLogChange(val) {
+            console.log(document.getElementById("inputChange").value);
+        }
+
+        function repeatHello() {
+            for (var i = 0; i < 10; i++) {
+                console.log("Hello");
+            }
+        }
+
+        function doAddition() {
+            console.log(
+                parseInt( document.getElementById("var1").value) + parseInt( document.getElementById("var2").value)
+            );
+        }
+
+        doAddition(1 , 2);
+    
+    </script>
+
 </html>
